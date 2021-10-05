@@ -33,6 +33,8 @@ function gcd(a, b){
 
 //4 Least Common Multiple
 
+
+
 //5 Prime Number
 
 function isPrime(num) {
@@ -150,13 +152,13 @@ function nest1(n){
 let workingHours = [6, 6, 7, 7, 8, 8, 6, 7, 8, 7];
 //Iterate over the array, and print out Peter earned $... today! each day.
 for(let i = 0; i < workingHours.length; i++){
-console.log(`Peter earn ${workingHours[i]} today!`)}
+console.log(`Peter earn ${workingHours[i]*25} today!`)}
 //Calculate how much Peter made in the last two weeks.
 
 function totalIncome(){
 let sumOfWorkingHours = 0;
 for(let j = 0; j < workingHours.length; j++){
-    sumOfWorkingHours= sumOfWorkingHours + workingHours[j]
+    sumOfWorkingHours+= workingHours[j]
 }
     let income = sumOfWorkingHours*25
     return income
@@ -169,3 +171,35 @@ for(let j = 0; j < workingHours.length; j++){
 // that contains 250 numbers represent Peter's working hours in one year. 
 // Use the array to calculate Peter's estimated yearly income. 
 // Hint: find the way to add an item to the end of an array in the Docs of Assignment 4.
+
+//250days x 6-8hour/day= total hours
+//income = total hours x 25$/hour
+
+// function totalYearlyIncome(){
+//     let dailyHours=[];
+//     for(let i = 0; i < 250; i++){
+//         dailyHours.push((Math.floor(Math.random()*(8-6+1))+6))
+//     }
+//     let totalHours=0;
+//     for(let j = 0; j<dailyHours.length; j++){
+//         totalHours+= dailyHours[j]
+//     }
+//     let totalIncome=totalHours * 25
+//     return totalIncome
+// }
+// console.log(totalYearlyIncome());
+
+//Put your code in a function that takes in the number of weeks and return estimated revenue.
+function totalYearlyIncome(weeks){
+    let dailyHours=[];
+    for(let i = 0; i < weeks*5; i++){
+        dailyHours.push((Math.floor(Math.random()*(8-6+1))+6))
+    }
+    let totalHours=0;
+    for(let j = 0; j<dailyHours.length; j++){
+        totalHours+= dailyHours[j]
+    }
+    let totalIncome=totalHours * 25
+    return totalIncome
+}
+// console.log(totalYearlyIncome(50));
