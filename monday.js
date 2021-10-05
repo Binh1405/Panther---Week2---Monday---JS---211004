@@ -299,4 +299,5 @@ function play(){
             console.log("no")
         }
     }
-play();
+// play();
+
