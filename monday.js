@@ -276,3 +276,27 @@ var b = temp
 console.log(a)
 console.log(b)
 
+//8 Random Number
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.floor(Math.random()*3));
+console.log(Math.floor(Math.random()*3));
+console.log(Math.floor(Math.random()*3));
+console.log(Math.floor(Math.random()*3));
+console.log(Math.ceil(1.93));
+console.log(Math.round(1.93))
+console.log(Math.round(1.49));
+
+//9. Magic 8-ball
+
+function play(){
+    const randomNumber = Math.round(Math.random());
+    // console.log(randomNumber)
+    if (randomNumber === 0){
+        console.log("yes")}
+        else{
+            console.log("no")
+        }
+    }
+play();
