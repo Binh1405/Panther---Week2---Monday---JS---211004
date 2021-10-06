@@ -33,7 +33,18 @@ function gcd(a, b){
 
 //4 Least Common Multiple
 
-
+function whatIsTheLCM(num1, num2){
+let min = (num1 > num2) ? num1 : num2;
+while(true){
+    if(min%num1===0 && min %num2==0){
+        console.log(`the LCM of ${num1} and ${num2} is ${min}`)
+        break;
+    }
+    min++
+}
+return min
+}
+console.log(whatIsTheLCM(15, 20));
 
 //5 Prime Number
 
@@ -218,3 +229,4 @@ if (zero) {
 } else {
   console.log("Isn't truth");
 }
+
