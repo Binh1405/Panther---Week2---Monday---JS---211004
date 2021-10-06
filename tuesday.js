@@ -203,3 +203,18 @@ function totalYearlyIncome(weeks){
     return totalIncome
 }
 // console.log(totalYearlyIncome(50));
+
+//10 Truthy / Falsy
+const one = 1;
+
+if (one) {
+  console.log("Is truthy");
+}
+
+const zero = 0;
+
+if (zero) {
+  console.log("Is truthy");
+} else {
+  console.log("Isn't truth");
+}
